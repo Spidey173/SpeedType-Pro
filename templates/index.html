@@ -688,8 +688,8 @@
         function scrollToTestStats() {
             const statsContainer = document.querySelector(".stats-container");
 
-            // Scroll to it if it exists
-            if (statsContainer) {
+            // Scroll to it if it exists and is roughly the size of a pc or greater in pixels
+            if (statsContainer && window.innerWidth >= 770 & window.innerHeight >= 575) {
             statsContainer.scrollIntoView({
                 behavior: "smooth",
                 block: "start",
