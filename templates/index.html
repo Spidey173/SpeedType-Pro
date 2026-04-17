@@ -709,9 +709,11 @@
             wpmDisplay.textContent = '0';
             accuracyDisplay.textContent = '100%';
             timerDisplay.textContent = timeLeft;
-            resultContainer.style.display = 'none';
-            historyContainer.style.display = 'none';
+        resultContainer.style.display = 'none';
             loadRandomText(currentDifficulty);
+
+        // Called here to display latest test in history if clicked after a test was completed
+        loadHistory();
         }
 
         // End the test
